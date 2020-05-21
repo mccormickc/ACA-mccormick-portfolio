@@ -1,18 +1,20 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-image: url(https://png.pngtree.com/thumb_back/fh260/back_pic/00/15/30/4656e81f6dc57c5.jpg);
+    font-family: 'Quicksand', sans-serif;
+    background-image: url("../images/bgwallpaper.jpg");
     background-repeat: no-repeat;
     background-size: 1600px 1000px;
     width: 100vw;
     height: 100vh;
   }
-  /* What kind of selector is this? */
+
+  /* Class Selector for ACA Logo */
   .logo {
-    width: 150px;
+    width: 125px;
     height: 100px;
     margin: 3% 10%;
   }
 
+  /*Header Content*/
   header {
     display: grid;
     grid-template-columns: 40% 60%;
@@ -31,19 +33,20 @@ body {
     margin: 2% 1% 3%;
     height: 10%;
     width: 15%;
-    color: Black;
-    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
     font-size: 20px;
-    border-radius: 25px;
+    border-radius: 5px;
     background: transparent;
     padding: 20px;
     text-align: center;
-    border: 2px solid black;
+    border: 1px solid white;
   }
 
+/*Contact Me Nav Button Border*/
   .has-border {
-    border-radius: 25px;
-    border: 2px solid #0795C3;
+    border-radius: 5px;
+    border: 1px solid #0795C3;
     background: none;
     padding: 20px;
   }
@@ -54,17 +57,19 @@ body {
     width: 100%;
     padding-right: 2%;
   }
-  /* This is an ID selector */
+
+  /* Profile Picture ID selector */
   #profile-pic {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    margin: 15% auto;
+    margin: 5% auto;
     grid-column: 2/3;
   }
 
+  /*Headings */
   h1 {
-    color:black;
+    color:white;
     grid-column: 2/3;
     margin: 3% auto;
     border-bottom: 2px solid #1940A9;;
@@ -76,26 +81,27 @@ body {
     font-style: italic;
   }
 
+  /* Small Text Class - Currently used at the bottom of the page ACA info */
   .small-text {
     grid-column: 2/3;
-    color: black;
+    color: white;
     font-size: 10px;
     margin: 3% auto;
   }
-
+/* CTA Button */
   button {
     grid-column: 2/3;
     margin: 3% auto;
     width: 70%;
     height: 15%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-size: 20px;
-    border-radius: 25px;
+    border-radius: 5px;
     background: transparent;
     padding: 20px;
     padding-bottom: 5%;
     text-align: center;
-    color: black;
+    color: white;
     letter-spacing: 16px;
     font-style: italic;
   }
