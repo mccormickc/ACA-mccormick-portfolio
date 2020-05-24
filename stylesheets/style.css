@@ -3,36 +3,37 @@ body {
     background-image: url("../images/bgwallpaper.jpg");
     background-repeat: no-repeat;
     background-size: 1600px 1000px;
-    width: 100vw;
+    width: 90vw;
     height: 100vh;
+  }
+
+  /*Header Container*/
+  header {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    width: 100%;
   }
 
   /* Class Selector for ACA Logo */
   .logo {
-    width: 125px;
+    width: 105px;
     height: 100px;
     margin: 3% 10%;
   }
 
-  /*Header Content*/
-  header {
-    display: grid;
-    grid-template-columns: 40% 60%;
+/* Main Navigation Container */
+  nav {
+    display: flex;
+    justify-content: flex-end;
     width: 100%;
+    padding-right: 2%;
   }
 
-  main {
-    height: auto;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 30% 40% 30%;
-  }
-
-  /* This is an element within and element selector */ 
+  /* The a Element Selector for the Navigation */ 
   nav > a {
-    margin: 2% 1% 3%;
+    margin: 2.5% 1% 1%;
     height: 10%;
-    width: 15%;
+    width: 12%;
     color: white;
     font-family: 'Quicksand', sans-serif;
     font-size: 20px;
@@ -43,19 +44,13 @@ body {
     border: 1px solid white;
   }
 
-/*Contact Me Nav Button Border*/
-  .has-border {
-    border-radius: 5px;
-    border: 1px solid #0795C3;
-    background: none;
-    padding: 20px;
-  }
-
-  nav {
-    display: flex;
-    justify-content: flex-end;
+/* Main Content Container*/
+  main {
+    height: auto;
     width: 100%;
-    padding-right: 2%;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: auto;
   }
 
   /* Profile Picture ID selector */
@@ -76,9 +71,33 @@ body {
   }
 
   h2 {
-    grid-column: 2/3;
     margin: 3% auto;
     font-style: italic;
+  }
+
+  /* CTA Button */
+  .cta-button {
+    grid-column: 2/3;
+    margin: 3% auto;
+    width: 30%;
+    height: 15%;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: #FF1493;
+    padding: 15px 15px 25px;
+    text-align: center;
+    color: white;
+  }
+
+  /* Footer Content Container*/
+  footer {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: auto;
   }
 
   /* Small Text Class - Currently used at the bottom of the page ACA info */
@@ -87,20 +106,5 @@ body {
     color: white;
     font-size: 10px;
     margin: 3% auto;
-  }
-/* CTA Button */
-  button {
-    grid-column: 2/3;
-    margin: 3% auto;
-    width: 70%;
-    height: 15%;
-    font-family: 'Quicksand', sans-serif;
-    font-size: 20px;
-    border-radius: 5px;
-    background: transparent;
-    padding: 20px;
-    padding-bottom: 5%;
-    text-align: center;
-    color: white;
-    letter-spacing: 16px;
+    justify-content: center;
   }
