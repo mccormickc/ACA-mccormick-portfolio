@@ -1,0 +1,76 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-image: url("../images/bgwallpaper.jpg");
+    background-repeat: repeat;
+    background-size: cover;
+    width: 90vw;
+    height: 100vh;
+  }
+
+  /* ~~~~ Header Content ~~~~~ */
+  /*Header Container*/
+  header {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    width: 100%;
+  }
+
+  /* Class Selector for ACA Logo */
+  .logo {
+    width: 105px;
+    height: 100px;
+    margin: 3% 10%;
+  }
+
+  /* Main Navigation Container */
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 2%;
+  }
+
+  /* The a Element Selector for Navigation */ 
+  nav > a {
+    margin: 2.5% 1% 1%;
+    height: 10%;
+    width: 12%;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    background: transparent;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid white;
+  }
+
+  /* ~~~~ Main Body of Content below the navigation ~~~~ */
+  main {
+    background-color: white;
+    margin-left: 9%;
+    border-color: #FF1493;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+  }
+
+  /* ~~~~ Intro Section ~~~~ */
+  .intro {
+    display: grid;
+  }
+
+  .profile-picture {
+    border-radius: 50%;
+    width: 150px;
+  }
+
+  /* ~~~~ Skills Section ~~~~ */
+.skills {
+
+}
+  /* ~~~~ Work Experience Section ~~~~ */
+
+  .work-exp {
+
+  }
