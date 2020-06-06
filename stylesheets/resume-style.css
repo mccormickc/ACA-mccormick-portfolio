@@ -58,17 +58,42 @@ body {
   /* ~~~~ Intro Section ~~~~ */
   .intro {
     display: grid;
+    grid-template-columns: auto 25% auto;
+    grid-template-areas: "contact picture objectives";
+  }
+
+  .contact {
+    grid-area: contact;
   }
 
   .profile-picture {
-    border-radius: 50%;
-    width: 150px;
+    grid-area: picture;
+    text-align: center;
+  }
+
+  .objectives {
+    grid-area: objectives;
   }
 
   /* ~~~~ Skills Section ~~~~ */
-.skills {
-
+.skills-section {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-areas: "ed sk cert";
 }
+
+.education {
+  grid-area: ed;
+}
+
+.skills {
+  grid-area: sk;
+}
+
+.certifications {
+  grid-area: cert;
+}
+
   /* ~~~~ Work Experience Section ~~~~ */
 
   .work-exp {
