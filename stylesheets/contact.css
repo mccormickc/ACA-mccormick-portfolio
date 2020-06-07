@@ -1,0 +1,90 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-image: url("../images/bgwallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90vw;
+    height: 100vh;
+    color: white;
+  }
+
+  /*Header Container*/
+  header {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    width: 100%;
+  }
+
+  /* Class Selector for ACA Logo */
+  .logo {
+    width: 105px;
+    height: 100px;
+    margin: 3% 10%;
+  }
+
+/* Main Navigation Container */
+  nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 2%;
+  }
+
+  /* The a Element Selector for the Navigation */ 
+  nav > a {
+    margin: 2.5% 1% 1%;
+    height: 10%;
+    width: 12%;
+    color: white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    background: transparent;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid white;
+    border-style: solid;
+  }
+
+  .container {
+      background-color: #b400b4;
+      border: 1px white;
+      border-radius: 5px;
+      margin-left: 15%;
+      margin-right: 10%;
+      color: black;
+      padding-bottom: 5%;
+  }
+
+  .container > h1 {
+      text-decoration: underline #1940A9;
+      padding-left: 5%;
+      padding-top: 5%;
+  }
+
+  .form {
+      max-width: 500px;
+      margin: 2rem auto;
+      border: 2px black;
+      border-style: dashed;
+      padding: 2rem;
+      font-weight: bold;
+  }
+
+  /* Footer Content Container*/
+  footer {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: auto;
+  }
+
+  /* Small Text Class - Currently used at the bottom of the page ACA info */
+  .small-text {
+    grid-column: 2/3;
+    color: white;
+    font-size: 10px;
+    margin: 3% auto;
+    justify-content: center;
+  }
