@@ -1,1 +1,144 @@
-{\rtf1}
+body {
+  font-family: 'Quicksand', sans-serif;
+  background-image: url("../images/bgwallpaper.jpg");
+  background-repeat: repeat;
+  background-size: cover;
+  width: 90vw;
+  height: 100vh;
+  color: white;
+}
+
+/*Header Container*/
+header {
+  display: grid;
+  grid-template-columns: 20% 80%;
+  width: 100%;
+}
+
+/* Class Selector for ACA Logo */
+.logo {
+  width: 105px;
+  height: 100px;
+  margin: 3% 10%;
+}
+
+/* Main Navigation Container */
+nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-right: 2%;
+}
+
+/* The a Element Selector for the Navigation */ 
+nav > a {
+  margin: 2.5% 1% 1%;
+  height: 10%;
+  width: 12%;
+  color: white;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20px;
+  border-radius: 5px;
+  background: transparent;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid white;
+  border-style: solid;
+}
+
+*{box-sizing: border-box;}
+
+/* Gallery Container */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+   /* Footer Content Container*/
+   footer {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: auto;
+  }
+
+  /* Small Text Class - Currently used at the bottom of the page ACA info */
+  .small-text {
+    grid-column: 2/3;
+    color: white;
+    font-size: 10px;
+    margin: 3% auto;
+    justify-content: center;
+  }
+
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  /*Overlay*/
+  .container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
